@@ -1,0 +1,5 @@
+# filepath: c:\Docker_Practise\devops-terraform-ec2\.gitignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
