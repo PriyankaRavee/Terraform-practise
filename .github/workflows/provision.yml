@@ -24,10 +24,9 @@ jobs:
     - name: Terraform Init
       run: terraform init
     
-    - name: Terraform Import EC2 Key Pair (safe)
-      run: |
-        terraform state list | grep aws_key_pair.devops_key || \
-        terraform import aws_key_pair.devops_key devops-key
+    - name: Terraform Import EC2 Key Pair
+      run: terraform import aws_key_pair.devops_key devops-key
+
 
     - name: Terraform Validate
       run: terraform validate
