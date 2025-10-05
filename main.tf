@@ -53,7 +53,7 @@ resource "aws_instance" "devops_vm" {
   instance_type = var.instance_type
   key_name      = aws_key_pair.devops_key.key_name
   security_groups = [aws_security_group.devops_sg.name]
-  instance_state = "stopped"
+  # instance_state = "stopped"
 
   tags = {
     Name = "DevOps-Assignment-VM"
