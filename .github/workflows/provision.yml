@@ -31,7 +31,8 @@ jobs:
       run: |
         terraform apply -auto-approve \
           -var="key_name=devops-key" \
-          -var="private_key='${{ secrets.DEVOPS_KEY }}'"
+          -var="public_key='${{ secrets.DEVOPS_KEY_PUB }}'"
+
 
 
     - name: Show EC2 IP

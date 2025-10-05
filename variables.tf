@@ -10,6 +10,6 @@ variable "key_name" {
   description = "Name of your AWS key pair"
 }
 
-variable "public_key_path" {
-  description = "Path to your public SSH key"
+variable "public_key" {
+  description = "Raw public key string"
 }
