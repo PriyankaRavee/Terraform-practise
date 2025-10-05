@@ -12,4 +12,6 @@ variable "key_name" {
 
 variable "public_key" {
   description = "Raw public key string"
+  type        = string
 }
+
