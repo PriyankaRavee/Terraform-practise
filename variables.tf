@@ -10,8 +10,8 @@ variable "key_name" {
   description = "Name of your AWS key pair"
 }
 
-variable "public_key" {
-  description = "Raw public key string"
-  type        = string
-}
+# variable "public_key" {
+#   description = "Raw public key string"
+#   type        = string
+# }
 
